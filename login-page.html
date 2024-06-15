@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style-login-page.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="overlay" style="display: none"></div>
+    <div class="wrapper">
+        <div class="tabs">
+            <label class="tab">
+                <input type="radio" name="forms" value="login">Login
+            </label>
+            <label class="tab">
+                <input type="radio" name="forms" value="signup">Signup
+            </label>
+        </div>
+
+        <form class="form-login" id="form-login">
+            <label class="login-label">Login here</label>
+            <div class="username-block">
+                <label class="login-username" >Username</label>
+                <input class="login-input-username" type="text" name="username-login" placeholder="Enter username">
+            </div>
+            <div class="password-block">
+                <label class="login-password">Password</label>
+                <div class="toggle-password">
+                    <input class="login-input-password" type="password" name="password-login" placeholder="Enter password">
+                    <img class="image-hide-password-login" src="./images/hide.png">
+                    <img class="image-show-password-login" src="./images/show.png">
+                </div>
+            </div>
+            <button class="button-login">Login</button>
+        </form>
+
+        
+        <form class="form-signup" id="form-signup">
+            
+            <label class="signup-label">Create an account</label>
+
+            <div class="username-block">
+                <label class="signup-username">Username</label>
+                <input class="signup-input-username"  type="text"  name="username-signup" placeholder="Enter username">
+                <span class="invalid-data" id="errorUsername"></span>
+                <span class="valid-data" id="validUsername"></span>
+            </div>
+
+            <div class="email-block">
+                <label class="signup-email" >Email</label>
+                <input class="signup-input-email" type="email" name="email-signup" placeholder="Enter email">
+                <span class="invalid-data" id="errorEmail"></span>
+                <span class="valid-data" id="validEmail"></span>
+            </div>
+            
+            <div class="password-block">
+                <label class="signup-password">Password</label>
+                <div class="toggle-password">
+                    <input class="signup-input-password" type="password" name="password-signup" placeholder="Enter password">
+                    <img class="image-hide-password-signup" src="./images/hide.png">
+                    <img class="image-show-password-signup" src="./images/show.png">
+                </div>
+                <span class="invalid-data" id="errorPassword"></span>
+                <span class="valid-data" id="validPassword"></span>
+            </div>
+            
+            <div class="password-confirm-block">
+                <label class="signup-confirm-password">Confirm Password</label>
+                <div class="toggle-password">
+                    <input class="signup-input-confirm-password" type="password" name="password-confirm-signup" placeholder="Enter password">
+                    <img class="image-hide-password-signup-confirm" src="./images/hide.png">
+                    <img class="image-show-password-signup-confirm" src="./images/show.png">
+                </div>
+                <span class="invalid-data" id="errorConfirmPassword"></span>
+                <span class="valid-data" id="validConfirmPassword"></span>
+            </div>
+            <button class="button-signup">Signup</button>
+        </form>
+    </div>
+    
+    <div class="wrapper-modal-window" id="blockSuccess" style="display: none">
+        <div class="modal-window-success">
+            <p class="text-success">The registration was successful!</p>
+            <button class="OK-close-window-button" id="closeWindowSuccess">Okay</button>
+        </div>
+    </div>
+
+    <div class="wrapper-modal-window" id="blockFailed" style="display: none">
+        <div class="modal-window-fail">
+            <p class="text-fail">Error!</p>
+            <p class="text-fail2">Incorrect data or empty fields!</p>
+            <button class="OK-close-window-button" id="closeWindowFail">Okay</button>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

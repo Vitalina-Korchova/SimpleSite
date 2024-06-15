@@ -1,0 +1,923 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+body{
+    background-image: linear-gradient(to left,  #7dc5f3, #6946da);
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.wrapper-container-functionality{
+ width:260px;
+}
+
+.container-functionality {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: auto;
+    background-color: rgb(255, 254, 254);
+    box-shadow: 0px 0px 7px 0px rgba(73, 73, 73, 0.75);
+    border-radius: 8px;
+    z-index: 1;
+    gap: 18px;
+}
+
+.block-sort-by-age, .block-sort-by-name{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 4px;
+}
+
+.block-sort-by-date-join{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.block-filter-by-age{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+}
+
+.block-filter-by-country{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.block-filter-by-gender{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inputs-gender{
+    display: flex;
+    flex-direction: row;
+}
+
+.text-find-people{
+    margin: auto;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text-by-age{
+    margin-left: 31px;
+    font-size: 15px;
+    font-weight:bold
+}
+
+.text-by-name{
+    margin-left: 18px;
+    font-size: 15px;
+    font-weight:bold
+}
+
+.text-by-date-join{
+    margin-left: 6px;
+    font-size: 12px;
+    font-weight:bold
+}
+
+.ascendAge-button, .descendAge-button, .ascendName-button, .descendName-button, .ascendDateJoin-button, .descendDateJoin-button{
+    font-weight:bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #beabfb;
+    font-size: 17px;
+    width: 36px;
+    height: 33px;
+}
+
+.ascendAge-button:hover, .descendAge-button:hover, .ascendName-button:hover, .descendName-button:hover,
+.filter-by-age-button:hover, .filter-by-country-button:hover, .filter-by-gender:hover, .reset-button:hover,
+.logout-button:hover, .ascendDateJoin-button:hover, .descendDateJoin-button:hover{
+    box-shadow: 0px 0px 5px 0px rgba(150, 150, 150, 0.75);
+}
+
+.age-number, .country-text, .name-text{
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    outline: none;
+    font-size: 14px;
+}
+
+.filter-by-age-button, .filter-by-gender{
+    margin: auto;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    max-width: 150px;
+    background-color: #beabfb;
+     
+}
+
+.filter-by-country-button{
+    padding: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    width: 160px;
+    background-color: #beabfb;
+    margin: auto;
+}
+
+.inputs-gender{
+    gap: 3px;
+    text-align: center;
+    margin-left:10px ;
+}
+
+.reset-button{
+    padding: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    width: 80px;
+    background-color: #beabfb;
+    margin: auto;
+    align-items: center;
+}
+
+.logout-button{
+    padding: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    width: 80px;
+    background-color: #f2ab98;
+    margin: auto;
+    align-items: center;
+}
+
+
+
+
+
+
+.container-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.user-card{
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-bottom: 20px;
+    background-color: white;
+    width: 230px;
+    height: 320px;
+    box-shadow: 0px 0px 5px 0px rgba(150, 150, 150, 0.75);
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.photo-usercard{
+    border-radius: 50px;
+    margin: auto;
+    width:100px;
+    height: 100px;
+}
+
+.text-name-usercard{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+.text-email-usercard, .text-age-usercard, .text-name-usercard, .text-phone-usercard, 
+.text-country-usercard, .text-gender-usercard, .text-date-join-usercard{
+    display: flex;
+    text-align: center;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-country-usercard{
+    font-weight: bold;
+}
+
+.text-email-usercard{
+    font-size: 12px;
+}
+
+
+.text-date-join-usercard{
+    font-size: 12px;
+    color: rgb(141, 141, 141);
+}
+
+.text-line{
+    margin: 12px;
+    width: 200px;
+    height: 1px;
+    background-color: rgb(206, 206, 206);
+}
+
+.text-gender-usercard{
+    font-weight: bold;
+    color: purple;
+    text-transform: uppercase; 
+
+}
+
+
+
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 999;
+}
+.wrapper-modal-window{
+    display: fixed;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    animation: slideIn 0.8s ease-out;
+}
+
+.modal-window-fail{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 7px 0px rgba(122, 122, 122, 0.75);
+    animation: fadeIn 0.8s ease-out;
+}
+
+.text-fail{
+    margin-top: 8%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+.OK-close-window-button{
+    border-radius: 5px;
+    border: none;
+    margin: auto;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    color:  rgb(45, 27, 187);
+    background-image: linear-gradient(to left, #c5b9ed, #c4e4f8);;
+    font-weight: bold;
+    font-size: 26px;
+    padding: 5px;
+}
+
+.OK-close-window-button:hover{
+    box-shadow: 0px 0px 7px 0px rgba(158, 158, 158, 0.75);
+}
+
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+  
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+
+
+@media (min-width: 425px) and (max-width: 550px) {
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 310px;
+    }
+    
+    .wrapper-container-functionality{
+     width:400px;
+     align-items: center;
+     text-align: center;
+     justify-content: center;
+     margin: auto;
+    }
+
+    .container-functionality {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: auto;
+        background-color: rgb(255, 254, 254);
+        box-shadow: 0px 0px 7px 0px rgba(73, 73, 73, 0.75);
+        border-radius: 8px;
+        z-index: 1;
+        gap: 8px;
+    }
+
+    .block-sort{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .block-sort-by-age, .block-sort-by-name, .block-sort-by-date-join{
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+    .block-filter-by-age{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        justify-content: center;
+        
+    }
+    
+    .block-filter-by-country{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        justify-content: center;
+    }
+    
+    .block-filter-by-gender{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        justify-content: center;
+    }
+    
+    .inputs-gender{
+        display: flex;
+        flex-direction: row;
+        font-size: 16px;
+    }
+    
+    .text-find-people{
+        margin: auto;
+        font-size: 17px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .text-by-age{
+        font-size: 10px;
+        font-weight:bold
+    }
+    
+    .text-by-name{
+        font-size: 10px;
+        font-weight:bold
+    }
+    
+    .text-by-date-join{
+        font-size: 10px;
+        font-weight:bold
+    }
+    
+    .ascendAge-button, .descendAge-button, .ascendName-button, .descendName-button, .ascendDateJoin-button, .descendDateJoin-button{
+        font-weight:bold;
+        border: none;
+        border-radius: 5px;
+        background-color: #beabfb;
+        font-size: 17px;
+        width: 26px;
+        height: 23px;
+    }
+    
+    .age-number, .country-text, .name-text{
+        width: 150px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        outline: none;
+        font-size: 11px;
+    }
+    
+    .filter-by-age-button, .filter-by-gender{
+        margin: auto;
+        padding: 5px;
+        font-size: 10px;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        max-width: 150px;
+        background-color: #beabfb;
+         
+    }
+    
+    .filter-by-country-button{
+        padding: 5px;
+        font-size: 10px;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        width: 130px;
+        background-color: #beabfb;
+        margin: auto;
+    }
+    
+    .inputs-gender{
+        gap: 3px;
+        text-align: center;
+        margin-left:10px ;
+    }
+    
+    .reset-button{
+        padding: 5px;
+        font-size: 11px;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        width: 80px;
+        background-color: #beabfb;
+        margin: auto;
+        align-items: center;
+    }
+    
+    .logout-button{
+        padding: 5px;
+        font-size: 11px;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        width: 80px;
+        background-color: #f2ab98;
+        margin: auto;
+        align-items: center;
+    }
+
+
+
+
+    .user-card{
+        padding: 5px;
+        border-radius: 10px;
+        margin-left: 2%;
+        margin-bottom: 20px;
+        background-color: white;
+        width: 130px;
+        height:220px;
+        box-shadow: 0px 0px 5px 0px rgba(150, 150, 150, 0.75);
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .photo-usercard{
+        border-radius: 50px;
+        margin: auto;
+        width:70px;
+        height: 70px;
+    }
+    
+    .text-name-usercard{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    
+    .text-age-usercard, .text-name-usercard, .text-phone-usercard{
+        display: flex;
+        text-align: center;
+        margin:auto;
+        justify-content: center;
+        align-items: center;
+        font-size: 11px;
+    }
+    
+    .text-country-usercard{
+        font-weight: bold;
+        font-size: 12px;
+        display: flex;
+        text-align: center;
+        margin:auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .text-email-usercard{
+        font-size: 8px;
+        display: flex;
+        text-align: center;
+        margin:auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .text-date-join-usercard{
+        font-size: 11px;
+        color: rgb(141, 141, 141);
+        display: flex;
+        text-align: center;
+        margin:auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .text-line{
+        margin: auto;
+        justify-content: center;
+        width: 100px;
+        height: 1px;
+        background-color: rgb(206, 206, 206);
+    }
+    
+    .text-gender-usercard{
+        font-weight: bold;
+        color: purple;
+        text-transform: uppercase; 
+        display: flex;
+        text-align: center;
+        margin:auto;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+    }
+
+
+
+    .wrapper-modal-window{
+        display: fixed;
+        position: fixed;
+        top: 25%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        animation: slideIn 0.8s ease-out;
+    }
+    
+    .text-fail{
+        margin-top: 8%;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    
+    .OK-close-window-button{
+        border-radius: 5px;
+        border: none;
+        margin: auto;
+        align-items: center;
+        width: 40%;
+        height: 100%;
+        color:  rgb(45, 27, 187);
+        background-image: linear-gradient(to left, #c5b9ed, #c4e4f8);;
+        font-weight: bold;
+        font-size: 17px;
+        padding: 5px;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 424px) {
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 270px;
+    }
+    
+    .wrapper-container-functionality{
+     width: 300px;
+     align-items: center;
+     text-align: center;
+     justify-content: center;
+     margin: auto;
+    }
+
+    .container-functionality {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: auto;
+        background-color: rgb(255, 254, 254);
+        box-shadow: 0px 0px 7px 0px rgba(73, 73, 73, 0.75);
+        border-radius: 8px;
+        z-index: 1;
+        gap: 8px;
+    }
+
+    .block-sort{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .block-sort-by-age, .block-sort-by-name, .block-sort-by-date-join{
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+    .block-filter-by-age{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        justify-content: center;
+        
+    }
+    
+    .block-filter-by-country{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        justify-content: center;
+    }
+    
+    .block-filter-by-gender{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        justify-content: center;
+    }
+    
+    .inputs-gender{
+        display: flex;
+        flex-direction: row;
+        font-size: 13px;
+    }
+    
+    .text-find-people{
+        margin: auto;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .text-by-age{
+        font-size: 8px;
+        font-weight:bold
+    }
+    
+    .text-by-name{
+        font-size: 8px;
+        font-weight:bold
+    }
+    
+    .text-by-date-join{
+        font-size: 8px;
+        font-weight:bold
+    }
+    
+    .ascendAge-button, .descendAge-button, .ascendName-button, .descendName-button, .ascendDateJoin-button, .descendDateJoin-button{
+        font-weight:bold;
+        border: none;
+        border-radius: 5px;
+        background-color: #beabfb;
+        font-size: 14px;
+        max-width:  26px;
+        max-height: 23px;
+    }
+    
+    .age-number, .country-text, .name-text{
+        width: 150px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        outline: none;
+        font-size: 8px;
+    }
+    
+    .filter-by-age-button, .filter-by-gender{
+        margin: auto;
+        padding: 3px;
+        font-size: 7px;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        width: 100px;
+        background-color: #beabfb;
+         
+    }
+    
+    .filter-by-country-button{
+        padding: 5px;
+        font-size: 7px;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        max-width:  100px;
+        background-color: #beabfb;
+        margin: auto;
+    }
+    
+    .inputs-gender{
+        gap: 3px;
+        text-align: center;
+        margin-left:10px ;
+    }
+    
+    .reset-button{
+        padding: 5px;
+        font-size: 8px;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        max-width: 80px;
+        background-color: #beabfb;
+        margin: auto;
+        align-items: center;
+    }
+    
+    .logout-button{
+        padding: 3px;
+        font-size:8px;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        max-width:  80px;
+        background-color: #f2ab98;
+        margin: auto;
+        align-items: center;
+    }
+
+
+
+
+    .user-card{
+        padding: 5px;
+        border-radius: 10px;
+        margin-left: 2%;
+        margin-bottom: 20px;
+        background-color: white;
+        width: 130px;
+        height:220px;
+        box-shadow: 0px 0px 5px 0px rgba(150, 150, 150, 0.75);
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .photo-usercard{
+        border-radius: 50px;
+        margin: auto;
+        width:70px;
+        height: 70px;
+    }
+    
+    .text-name-usercard{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    
+    .text-age-usercard, .text-name-usercard, .text-phone-usercard{
+        display: flex;
+        text-align: center;
+        margin:auto;
+        justify-content: center;
+        align-items: center;
+        font-size: 11px;
+    }
+    
+    .text-country-usercard{
+        font-weight: bold;
+        font-size: 12px;
+        display: flex;
+        text-align: center;
+        margin:auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .text-email-usercard{
+        font-size: 8px;
+        display: flex;
+        text-align: center;
+        margin:auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .text-date-join-usercard{
+        font-size: 11px;
+        color: rgb(141, 141, 141);
+        display: flex;
+        text-align: center;
+        margin:auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .text-line{
+        margin: auto;
+        justify-content: center;
+        width: 100px;
+        height: 1px;
+        background-color: rgb(206, 206, 206);
+    }
+    
+    .text-gender-usercard{
+        font-weight: bold;
+        color: purple;
+        text-transform: uppercase; 
+        display: flex;
+        text-align: center;
+        margin:auto;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+    }
+
+
+
+    .wrapper-modal-window{
+        display: fixed;
+        position: fixed;
+        top: 25%;
+        left: 42%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        animation: slideIn 0.8s ease-out;
+    }
+    
+    .text-fail{
+        margin-top: 8%;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    
+    .OK-close-window-button{
+        border-radius: 5px;
+        border: none;
+        margin: auto;
+        align-items: center;
+        width: 40%;
+        height: 100%;
+        color:  rgb(45, 27, 187);
+        background-image: linear-gradient(to left, #c5b9ed, #c4e4f8);;
+        font-weight: bold;
+        font-size: 17px;
+        padding: 5px;
+    }
+}
