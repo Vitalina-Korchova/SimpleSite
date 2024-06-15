@@ -329,7 +329,7 @@ function CheckDataForLoginFromLocalStorage(){
 
     if (userData && userData.username === username && userData.password === password) {
        
-      window.location.href = "main-page.html"; 
+      window.location.href = "index.html"; 
     } else {
       FailLogin();
     }
