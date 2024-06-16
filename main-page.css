@@ -87,7 +87,7 @@ body{
 }
 
 .text-by-date-join{
-    margin-left: 6px;
+    margin-left: 9px;
     font-size: 12px;
     font-weight:bold
 }
@@ -124,7 +124,7 @@ body{
     font-weight: bold;
     border-radius: 5px;
     border: none;
-    max-width: 150px;
+    width: 160px;
     background-color: #beabfb;
      
 }
@@ -148,7 +148,7 @@ body{
 
 .reset-button{
     padding: 5px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
     border-radius: 5px;
     border: none;
@@ -160,7 +160,7 @@ body{
 
 .logout-button{
     padding: 5px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
     border-radius: 5px;
     border: none;
@@ -437,7 +437,7 @@ body{
         border: none;
         border-radius: 5px;
         background-color: #beabfb;
-        font-size: 17px;
+        font-size: 14px;
         width: 26px;
         height: 23px;
     }
@@ -458,7 +458,7 @@ body{
         font-weight: bold;
         border-radius: 5px;
         border: none;
-        max-width: 150px;
+        width: 160px;
         background-color: #beabfb;
          
     }
@@ -469,7 +469,7 @@ body{
         font-weight: bold;
         border-radius: 5px;
         border: none;
-        width: 130px;
+        width: 160px;
         background-color: #beabfb;
         margin: auto;
     }
@@ -482,7 +482,7 @@ body{
     
     .reset-button{
         padding: 5px;
-        font-size: 11px;
+        font-size: 10px;
         font-weight: bold;
         border-radius: 5px;
         border: none;
@@ -494,7 +494,7 @@ body{
     
     .logout-button{
         padding: 5px;
-        font-size: 11px;
+        font-size: 10px;
         font-weight: bold;
         border-radius: 5px;
         border: none;
@@ -634,7 +634,7 @@ body{
     .wrapper{
         display: flex;
         flex-direction: column;
-        gap: 270px;
+        gap: 290px;
     }
     
     .wrapper-container-functionality{
@@ -747,7 +747,7 @@ body{
     
     .filter-by-age-button, .filter-by-gender{
         margin: auto;
-        padding: 3px;
+        padding: 5px;
         font-size: 7px;
         font-weight: bold;
         border-radius: 5px;
@@ -776,7 +776,7 @@ body{
     
     .reset-button{
         padding: 5px;
-        font-size: 8px;
+        font-size: 7px;
         font-weight: bold;
         border-radius: 5px;
         border: none;
@@ -787,8 +787,8 @@ body{
     }
     
     .logout-button{
-        padding: 3px;
-        font-size:8px;
+        padding: 5px;
+        font-size:7px;
         font-weight: bold;
         border-radius: 5px;
         border: none;
